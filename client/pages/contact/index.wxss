@@ -1,0 +1,14 @@
+.position {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.position wx-navigator {
+  display: inline-block;
+  padding: 20rpx;
+}
+.main {
+  width: 94%;
+  padding:0 3% 150rpx;
+  font-size: 34rpx;
+  line-height: 70rpx;
+}

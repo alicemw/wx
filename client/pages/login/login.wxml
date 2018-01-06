@@ -1,0 +1,9 @@
+<view class='container'>
+  <image mode='widthFix' src="{{avatar}}" style='width:110rpx;height:110rpx;border-radius:50%'></image>
+  <view>{{name}}</view>
+<view style='width:100%;margin-top:50rpx;'>
+  <button type='primary' open-type='getPhoneNumber' bindgetphonenumber='getphonenumber' style='width:100%'>登录</button>
+
+</view>
+
+</view>

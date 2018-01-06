@@ -1,0 +1,23 @@
+.position {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.position wx-navigator {
+  display: inline-block;
+  padding: 20rpx;
+}
+.main {
+  width: 94%;
+  padding:0 3% 150rpx;
+}
+.wxParse-div {
+  overflow: hidden;
+  line-height: 35px;
+  font-size: 18px;
+}
+.wxParse-div image {
+  margin: 0 auto;
+}
+.wxParse-img {
+  margin: 0 auto;
+}

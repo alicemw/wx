@@ -1,0 +1,130 @@
+
+<view class='logo'>
+<image mode='widthFix'  src="../images/logo.png"></image>
+</view>
+<swiper mode="widthFix" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}">
+  <block wx:for="{{imgUrls}}" wx:key>
+    <swiper-item mode="widthFix">
+      <image mode='widthFix' src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view  class='ask'>
+<view>
+  <view class='yuyue' bindtap='dacall'>
+  <image mode='widthFix' src='../images/tel.png'></image>
+  <view>
+  <view class='yytitle'>电话医生</view>
+  <view class='jiaoliu'>与名医  深度交流</view>
+  </view>
+  </view>
+
+  <navigator class='yuyue' url='/pages/login/login'>
+  <image mode='widthFix' src='../images/question.png'></image>
+  <view>
+  <view  class='yytitle'>快速咨询</view>
+  <view class='jiaoliu'>在线医生 免费解答</view>
+  </view>
+  </navigator>
+
+</view>
+<navigator class='yuyueguahao' url="/pages/zixun/index" hover-class="navigator-hover">
+<image mode='widthFix' src='../images/order.png'></image>
+<view>
+<view  class='yytitle'>预约挂号</view>
+<view class='jiaoliu'>挂专家号不再难</view>
+</view>
+</navigator>
+</view>
+<view class='disease'>
+<text class='title'>常见皮肤病</text>
+<view class='datalist'>
+    <navigator wx:for="{{datalist}}" wx:key  url="/pages/list/index?id={{item.id}}&name={{item.typename}}">
+        {{item.typename}}
+    </navigator>
+</view>
+</view>
+
+<view class='doctor'>
+<text class='title'>医生团队</text>
+<swiper mode="widthFix" 
+  autoplay="{{autoplay}}" interval="5000">
+
+    <swiper-item mode="widthFix">
+      <view class='docavatar'>
+      <image mode='widthFix' src="http://m.0832pifu.com/uploads/allimg/160513/1-160513203602I4.jpg" class="slide-image"/>
+      <view style='margin-top:20rpx;'>副主任医师</view>      
+      </view>
+      <view class='docdsc'>
+          <view class='docname'>
+          李永明 <text>副教授</text></view>
+          <view class='docjj'>
+            <text>医生简介</text>
+            中华医学会会员，四川省皮肤病性病学会会员，皮...
+            <navigator url='/pages/article/index?artid=111&name=医生团队&arttitle=李永明'>
+              [详情]
+            </navigator>
+          </view>
+          <view class='docsc'>
+            <text>擅长</text>
+           痤疮、荨麻疹、皮炎、湿疹、真菌病、毛发等
+          </view>
+      </view>
+    </swiper-item>
+    <swiper-item mode="widthFix">
+      <view class='docavatar'>
+      <image mode='widthFix' src="http://m.0832pifu.com/uploads/allimg/170413/1-1F4131411390-L.jpg" class="slide-image"/>
+      <view style='margin-top:20rpx;'>副主任医师</view>      
+      </view>
+      <view class='docdsc'>
+          <view class='docname'>
+          廖乐义 <text>副主任医师</text></view>
+          <view class='docjj'>
+            <text>医生简介</text>
+            毕业于内江中医学院，后赴上海华山医院进修，从...
+            <navigator url='/pages/article/index?artid=412&name=医生团队&arttitle=廖乐义'>
+             [详情]
+            </navigator>
+          </view>
+          <view class='docsc'>
+            <text>擅长</text>
+           牛皮癣(银屑病)、湿疹、痤疮、白癜风、带状疱疹、神经性皮炎
+          </view>
+      </view>
+    </swiper-item>
+</swiper>
+</view>
+<view class='footer'>
+  <image mode='widthFix' style='width:546rpx;height:112rpx;margin:0 auto'  src='http://m.0832pifu.com/images/cqdb/list_bottom_logo_33.png'></image>
+
+  <view>地址：内江市市中区双苏路综合楼126号</view>
+  <view>健康咨询电话：0832-5197777 </view>
+  <view>内江和润皮肤病医院 版权所有</view>
+  <view>本网站信息仅做参考，具体诊疗请遵医师意见  </view>
+  <view>备案/许可证号:蜀ICP备16013218号  </view>
+</view>
+
+<view class='foot'>
+  <view bindtap='back' class='footnav'>
+    <image mode='widthFix' src='../images/footicon1.png' ></image>
+    <view>返回</view>
+  </view>
+    <navigator class='footnav' url='/pages/index/index'>
+    <image mode='widthFix' src='../images/footicon2.png' ></image>
+    <view>首页</view>
+  </navigator>
+    <navigator class='footnav' url='/pages/list/index?id=42&name=诊疗设备'>
+    <image mode='widthFix' src='../images/footicon3.png' ></image>
+    <view>诊疗设备</view>
+  </navigator>
+    <navigator class='footnav' url='/pages/contact/index?name=来院路线'>
+    <image mode='widthFix' src='../images/footicon4.png' ></image>
+    <view>来院路线</view>
+  </navigator>
+    <button id='kefu' class='footnav' open-type="contact">
+    <image mode='widthFix' src='../images/footicon5.png' ></image>
+    <view>预约挂号</view>
+  </button>
+
+</view>

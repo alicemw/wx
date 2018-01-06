@@ -1,0 +1,2 @@
+<button bindtap='test'>点击</button>
+<button bindtap='login'>登录</button>

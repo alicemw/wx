@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/index",
+    "pages/article/index",
+    "pages/addCgi/addCgi",
+    "pages/contact/index",
+    "pages/login/login",
+    "pages/contact/map",
+    "pages/zixun/index"
+  ],
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "内江和润皮肤病医院",
+    "navigationBarTextStyle":"black"
+  }
+  
+}

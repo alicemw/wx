@@ -1,0 +1,27 @@
+<!--pages/article/index.wxml-->
+<view class='logo'>
+<image mode='widthFix'  src="../images/logo.png"></image>
+</view>
+<view class='container'>
+  <view class='position'>
+    <navigator url='/pages/index/index'>主页</navigator>
+    <text>></text>
+    <navigator url="/pages/contact/index?name={{name}}">{{name}}</navigator>
+  </view>
+  <view class='main'>
+      <view style='padding:15px 0 ;font-size:24px;font-weight:bold;text-align:center;color:#0070bc;'>{{title}}</view>
+      <view>挂号电话：0832-5179999</view>
+      <view>医院地址：内江市市中区双苏路综合楼126号</view>
+      <view><text style='color:#00f;font-weight:bold'>公交路线① ：</text>晏家湾车站：乘坐105路，202路，318路车到和润医院(运亨酒店下车即到）。</view>
+      <view><text style='color:#00f;font-weight:bold'>公交路线② ：</text>四号路（东兴区汽车站）：乘坐105路，319路车到和润医院(运亨酒店下车即到）。</view>
+      <view><text style='color:#00f;font-weight:bold'>公交路线③ ：</text>卷子坳车站（长途汽车东站）：乘坐105路,202路车到和润医院(运亨酒店下车即到）。</view>
+      <view><text style='color:#00f;font-weight:bold'>公交路线④ ：</text>高客站（高速路汽车站）：乘坐105路，202路，302路，318路，319路车。</view>
+      <view>
+       <map id="map" longitude="105.041700" latitude="29.576990" scale="18" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+      </view>
+    <view>
+    <button type="primary" style='margin-top:20rpx;' bindtap="click">在线导航</button>
+    </view>
+  </view>
+ 
+</view>

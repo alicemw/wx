@@ -1,0 +1,39 @@
+<!--pages/article/index.wxml-->
+<view class='logo'>
+<image mode='widthFix'  src="../images/logo.png"></image>
+</view>
+<view class='container'>
+  <view class='position'>
+    <navigator url='/pages/index/index'>主页</navigator>
+    <text>></text>
+    <navigator url="/pages/list/index?id={{id}}&name={{name}}">{{name}}</navigator>
+  </view>
+  <view class='main'>
+      <view style='padding:15px 0 ;font-size:24px;font-weight:bold;text-align:center;color:#0070bc;'>{{title}}</view>
+      <import src="../../wxParse/wxParse.wxml"/>
+      <template is="wxParse" data="{{wxParseData:articlebody.nodes}}"/>
+  </view>
+</view>
+<view class='foot'>
+  <view bindtap='back' class='footnav'>
+    <image mode='widthFix' src='../images/footicon1.png' ></image>
+    <view>返回</view>
+  </view>
+    <navigator class='footnav' url='/pages/index/index'>
+    <image mode='widthFix' src='../images/footicon2.png' ></image>
+    <view>首页</view>
+  </navigator>
+    <navigator class='footnav'>
+    <image mode='widthFix' src='../images/footicon3.png' ></image>
+    <view>诊疗设备</view>
+  </navigator>
+    <navigator class='footnav' url='/pages/contact/index?name=来院路线'>
+    <image mode='widthFix' src='../images/footicon4.png' ></image>
+    <view>来院路线</view>
+  </navigator>
+    <navigator class='footnav' url='/pages/zixun/index'>
+    <image mode='widthFix' src='../images/footicon5.png' ></image>
+    <view>预约挂号</view>
+  </navigator>
+</view>
+

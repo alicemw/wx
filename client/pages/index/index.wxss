@@ -1,0 +1,170 @@
+/**index.wxss**/
+page {
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+swiper {
+width: 100%;
+height: 294rpx;
+}
+swiper image {
+  width: 100%;
+  height: 294rpx;
+}
+.ask {
+  display: flex;
+  background: #fff;
+  justify-content: space-between;
+}
+.disease,.doctor {
+  background: #fff;
+  width: 94%;
+  padding: 20rpx 3%;
+  margin: 20rpx auto 0;
+}
+
+.doctor swiper {
+  height: 400rpx;
+}
+.doctor swiper-item {
+  display: flex;
+  justify-content: space-between;
+}
+.docavatar {
+  width: 250rpx;
+  text-align: center;
+}
+.docdsc {
+  width: 415rpx;
+}
+.docname {
+  color: #00b4ff;
+  font-size: 40rpx;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  padding-bottom: 5rpx;
+}
+.docname text {
+  color: #999999;
+  font-weight: normal;
+  font-size: 28rpx;
+}
+.docjj,.docsc {
+  color: #666;
+  padding-top: 10rpx;
+  font-size: 28rpx;
+}
+.docsc {
+  background: #fff4d4;
+  padding: 10rpx;
+  display: block;
+}
+.docjj text,.docsc text {
+  color: #000;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.docjj navigator {
+  color: red;
+  font-size: 34rpx;
+}
+
+.doctor image {
+  width: 240rpx;
+  height: 315rpx;
+}
+.title {
+  border-left: 3px solid #ff0;
+  font-size: 46rpx;
+  text-indent: 50rpx;
+  padding:20rpx 0 ; 
+  display: block;
+  font-weight: bold;
+  color: #656565;
+  margin: 20rpx 0;
+}
+.datalist {
+  display: flex;
+  background: white;
+
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.datalist wx-navigator {
+  width: 48%;
+  display: inline-block;
+  text-align: center;
+  background: #43bfc7;
+  padding: 10rpx 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+}
+.yuyue {
+  width:300rpx;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 24rpx 65rpx;
+  color: #535353;
+  font-weight: normal;
+  line-height: 45rpx;
+  border:1px solid #ccc;
+  border-top: none;
+  border-left: none;
+}
+.yuyue:nth-child(2){
+  border-bottom: none;
+}
+
+.yuyue image {
+  width: 83rpx;
+  height: 83rpx;
+
+}
+.yuyueguahao {
+  padding: 30rpx 0;
+  width:304rpx;
+  text-align: center;
+}
+.yuyueguahao image {
+  width: 82rpx;
+  height: 82rpx;
+  margin: 0 auto;
+}
+.yuyueguahao>view {
+  margin-top: 20rpx;
+  line-height: 50rpx;
+}
+.yuyue view {
+  text-align: center;
+}
+.jiaoliu {
+  font-size: 26rpx;
+  color:#909090;
+}
+.wx-contact-button-wrapper {
+  display: none;
+}
+view {
+  font-size:30rpx;
+}
+#kefu {
+padding: 30px 0 0 0;
+margin: 0;
+background: #eeeeee;
+line-height: 1.5;
+border: none;
+}
+#kefu::after {
+  width: 0;
+  height: 0;
+  border: 1px dashed transparent;
+  content: 1;
+  -webkit-transform-origin: 100em 100em
+}

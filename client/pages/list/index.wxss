@@ -1,0 +1,44 @@
+/* pages/list/index.wxss */
+.container  {
+  padding-bottom: 150rpx;
+}
+.position {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.position wx-navigator {
+  display: inline-block;
+  padding: 20rpx;
+}
+.listbody {
+  width: 94%;
+  padding:0 3%; 
+}
+.articleitem {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  margin: 50rpx 0 ;
+}
+.articleitem image {
+  width: 25%;
+  height: 88rpx;
+  margin-right: 20rpx;
+  max-height: 150rpx;
+  min-height: 100rpx;
+}
+.articleitem view {
+  width: 65%;
+  font-size: 30rpx;
+ 
+}
+.articleitem view navigator {
+  color: black;
+   text-overflow: ellipsis;
+  font-weight: bold;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 40rpx;
+
+}
